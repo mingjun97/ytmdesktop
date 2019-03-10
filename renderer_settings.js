@@ -27,7 +27,10 @@ const elementAppLanguage = document.getElementById( 'select-app-language' );
 //const elementBtnAppRelaunch = document.getElementById( 'btn-app-relaunch' );
 
 if ( process.platform != "darwin" ) {
-    elementToggleShinyTray.disabled = true;
+    let macSpecificNodes = document.getElementsByClassName('macos-specific');
+    for(let i = 0; i < macSpecificNodes.length ; i++){
+        macSpecificNodes.item(i).style.display = 'none';
+    }
 }
 
 elementKeepBackground.addEventListener( 'click', function() {

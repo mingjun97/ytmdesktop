@@ -131,6 +131,33 @@
         text-align: center;
       }
 
+      .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+      }
+
+      .tooltip .tooltiptext {
+        visibility: hidden;
+        /* width: 100%; */
+        background-color: #131313;
+        color: #FFF;
+        text-align: center;
+        border-radius: 6px;
+        
+        position: absolute;
+        z-index: 1;
+        bottom: 100%;
+        left: 50%;
+        transition: opacity 0.75s;
+        opacity: 0;
+      }
+
+      .tooltip:hover .tooltiptext{
+        visibility: visible;
+        opacity: 1;
+
+      }
     </style>
   </head>
   <body>
@@ -206,6 +233,14 @@
                   <tr>
                     <td>
                       <span id="i18n_LABEL_SETTINGS_TAB_GENERAL_DISCORD_RICH_PRESENCE"></span>
+                      <div class="tooltip">
+                        <i class="tiny material-icons">help_outline</i>
+                        <div class="tooltiptext">
+                          <div style="width: 350px; background-color: gray; border-radius: 5px">
+                            Let your friends on Discord see what are you playing!
+                          </div>
+                        </div>
+                      </div>
                     </td>
                     <td class="right">
                       <div class="switch">
@@ -240,14 +275,20 @@
                       <!--button class="btn hide" id="btn-app-relaunch">Reload</button-->
                     </td>
                   </tr>
-                  <tr >
+                  <tr class="macos-specific">
                     <td colspan="2">
                       <div class="divider" style="margin-top: 15%">&nbsp;<div>
                     </td>
                   </tr>
-                  <tr>
+                  <tr class="macos-specific">
                     <td>
                       <span id="i18n_LABEL_SETTINGS_TAB_GENERAL_SHINY_TRAY"></span>
+                      <div class="tooltip">
+                        <i class="tiny material-icons">help_outline</i>
+                        <div class="tooltiptext">
+                            <img src="assets/img/help.png"/>
+                        </div>
+                      </div>
                     </td>
                     <td class="right">
                       <div class="switch">
@@ -258,19 +299,19 @@
                       </div>
                     </td>
                   </tr>
-                  <tr>
-                  <td>
-                        <span id="i18n_LABEL_SETTINGS_TAB_GENERAL_SHINY_TRAY_DARK"></span>
-                      </td>
-                      <td class="right">
-                        <div class="switch">
-                          <label>
-                            <input type="checkbox" id="toggle-shiny-tray-dark"/>
-                            <span class="lever"></span>
-                          </label>
-                        </div>
-                      </td>
-                    </tr>
+                  <tr class="macos-specific">
+                    <td>
+                      <span id="i18n_LABEL_SETTINGS_TAB_GENERAL_SHINY_TRAY_DARK"></span>
+                    </td>
+                    <td class="right">
+                      <div class="switch">
+                        <label>
+                          <input type="checkbox" id="toggle-shiny-tray-dark"/>
+                          <span class="lever"></span>
+                        </label>
+                      </div>
+                    </td>
+                  </tr>
                 </tbody>
               </table>
 
@@ -362,18 +403,6 @@
                   </tr>
                 </tbody>
               </table>
-            </div>
-          </div>
-        </div>
-
-        <div id="macos" class="col s12" >
-          <div class="row">
-            <div class="col s12">
-              <table class="table">
-                <tbody>
-                </tbody>
-              </table>
-
             </div>
           </div>
         </div>

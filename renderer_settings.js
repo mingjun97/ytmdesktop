@@ -132,6 +132,7 @@ function loadi18n() {
     document.getElementById( 'i18n_LABEL_SETTINGS_TAB_GENERAL_SHOW_NOTIFICATIONS' ).innerText       = __.trans( 'LABEL_SETTINGS_TAB_GENERAL_SHOW_NOTIFICATIONS' );
     document.getElementById( 'i18n_LABEL_SETTINGS_TAB_GENERAL_CONTINUE_WHERE_LEFT_OF' ).innerText   = __.trans( 'LABEL_SETTINGS_TAB_GENERAL_CONTINUE_WHERE_LEFT_OF' );
     document.getElementById( 'i18n_LABEL_SETTINGS_TAB_GENERAL_DISCORD_RICH_PRESENCE' ).innerText    = __.trans( 'LABEL_SETTINGS_TAB_GENERAL_DISCORD_RICH_PRESENCE' );
+    document.getElementById( 'i18n_LABEL_SETTINGS_TAB_GENERAL_DISCORD_RICH_PRESENCE_TOOLTIP' ).innerText    = __.trans( 'LABEL_SETTINGS_TAB_GENERAL_DISCORD_RICH_PRESENCE_TOOLTIP' );
     document.getElementById( 'i18n_LABEL_SETTINGS_TAB_PAGE_ZOOM' ).innerText                        = __.trans( 'LABEL_SETTINGS_TAB_GENERAL_PAGE_ZOOM' );
     document.getElementById( 'i18n_LABEL_SETTINGS_TAB_GENERAL_SELECT_LANGUAGE' ).innerText          = __.trans( 'LABEL_SETTINGS_TAB_GENERAL_SELECT_LANGUAGE' );
     document.getElementById( 'i18n_LABEL_SETTINGS_TAB_GENERAL_SHINY_TRAY' ).innerText                 = __.trans( 'LABEL_SETTINGS_TAB_GENERAL_SHINY_TRAY');

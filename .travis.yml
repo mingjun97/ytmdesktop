@@ -5,10 +5,10 @@ before_install:
   - yarn add electron-builder --dev
 
 install:
-  - electron-builder -c ./electron-builder64.yml -l --x64 -p -c.linux.publish=github
-  - electron-builder -c ./electron-builder64.yml -w --x64 -p -c.win.publish=github
-  - electron-builder -c ./electron-builder.yml -l --ia32 -p -c.linux.publish=github
-  - electron-builder -c ./electron-builder.yml -w --ia32 -p -c.win.publish=github
+  - electron-builder -c ./electron-builder64.yml -l --x64 -p onTag -c.linux.publish=github
+  - electron-builder -c ./electron-builder64.yml -w --x64 -p onTag -c.win.publish=github
+  - electron-builder -c ./electron-builder.yml -l --ia32 -p onTag -c.linux.publish=github
+  - electron-builder -c ./electron-builder.yml -w --ia32 -p onTag -c.win.publish=github
 
 node_js: 
   - 13

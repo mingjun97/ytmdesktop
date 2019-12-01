@@ -1,8 +1,5 @@
 language: node_js
 
-before_install:
-  - npm install
-
 install:
   - electron-builder -c ./electron-builder64.yml
   - electron-builder -c ./electron-builder.yml

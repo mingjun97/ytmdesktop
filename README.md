@@ -7,6 +7,7 @@
 # YouTube Music Desktop App
 
 <img alt="window" src="https://ytmdesktop.app/img/product/main_5.png">
+
 &nbsp;
 
 # New and don't know how to use it?
